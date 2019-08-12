@@ -12,7 +12,9 @@
     "cxs": "^6.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
+    "typed.js": "^2.0.10",
     "typescript": "3.5.3"
   },
   "scripts": {
@@ -39,6 +41,8 @@
   },
   "devDependencies": {
     "@storybook/react": "^5.1.10",
-    "@types/storybook__react": "^4.0.2"
+    "@types/react-router-dom": "^4.3.4",
+    "@types/storybook__react": "^4.0.2",
+    "@types/typed.js": "^2.0.9"
   }
 }
