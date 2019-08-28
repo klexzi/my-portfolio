@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Box, makeStyles, Theme, Typography } from '@material-ui/core';
 import Typed from 'typed.js';
 
-import Dp from '../../../assets/dp-large.jpg';
+import Dp from '../../assets/dp-large.jpg';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -10,8 +10,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'right',
     backgroundRepeat: 'no-repeat',
-    width: '800px',
-    height: '100vh',
+    width: '100%',
+    height: '100%',
   },
   overlay: {
     backgroundColor: 'rgba(0, 0 ,0, 0.7)',
@@ -21,17 +21,15 @@ const useStyles = makeStyles((theme: Theme) => ({
   headline: {
     fontWeight: 900,
     fontSize: '80px',
+    lineHeight: '100px'
   },
-  message: {
-    fontSize: '30px',
-  }
 }));
 const Home = () => {
   const el = useRef(null)
   useEffect(() => {
     const options = {
       strings: [
-        'Develop high-quality software design and architecture.',
+        'Developing high-quality software designs and architectures.',
       'Producing, testing and debugging code','Directing software development projects.',
        'Leading engineers and developers.'
       ],
@@ -60,8 +58,7 @@ const Home = () => {
           >
             Kelechi Nwosu
           </Typography>
-          <Typography ref={el} component="span" color="textSecondary" className={classes.message}>
-          </Typography>
+          <Typography ref={el} variant="h5" component="span" color="textSecondary"/>
         </Box>
       </Box>
     </Box>

@@ -2,20 +2,21 @@ import React from 'react';
 import { Paper, Typography, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
-import dp from '../../../assets/dp-large.jpg';
+import dp from '../../assets/dp-large.jpg';
 import StyledIcon from '../StyledIcon/StyledIcon';
 import SocialIcons from '../SocialIcons/SocialIcons';
 
 const useStyles = makeStyles(theme => {
-  console.log('theme', theme);
   return {
     root: {
-      width: '500px',
-      height: '95vh',
+      width: 'inherit',
+      height: '107%',
       backgroundImage: `url(${dp})`,
       backgroundSize: 'cover',
       backgroundPosition: 'right',
       backgroundRepeat: 'no-repeat',
+      position: 'absolute',
+      top: '-20px',
     },
     container: {
       height: '100%',

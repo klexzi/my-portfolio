@@ -3,7 +3,7 @@ import { Box, Icon, Tooltip, Fade } from '@material-ui/core';
 import { withStyles, Theme } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/styles';
 
-import buttonClickSound from '../../../assets/button-click.wav';
+const buttonClickSound = require('../../assets/button-click.wav');
 
 export type StyledIconProp = {
   tipText: string,

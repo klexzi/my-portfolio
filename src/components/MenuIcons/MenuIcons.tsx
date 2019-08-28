@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
-import { Icon, Theme } from '@material-ui/core';
+import { Icon, Theme, Link } from '@material-ui/core';
+import { Link as RouterLink } from 'react-router-dom';
 
 export type MenuIconsProp = {
   type: 'home' | 'about' | 'contact' | 'works' | 'resume' | 'download',
@@ -14,7 +15,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       border: `1px solid ${theme.palette.primary.main}`,
     },
     fontSize: (props: MenuIconsProp) =>
-      props.type === 'download' ? 60 : props.active === true ? 48 : 36,
+      props.type === 'download' ? 50 : props.active === true ? 36 : 24,
     padding: (props: MenuIconsProp) => (props.active === true ? 15 : 10),
   },
 }));
@@ -35,12 +36,20 @@ const MenuIcons = (props: MenuIconsProp) => {
       ? 'cloud_download'
       : 'home';
   return (
-    <Icon
-      color={props.active || props.type === 'download' ? 'primary' : 'inherit'}
-      className={classes.root}
+    <Link
+      to={`/${type === 'home' ? '' : type}`}
+      component={RouterLink}
+      color="inherit"
     >
-      {iconType}
-    </Icon>
+      <Icon
+        color={
+          props.active || props.type === 'download' ? 'primary' : 'inherit'
+        }
+        className={classes.root}
+      >
+        {iconType}
+      </Icon>
+    </Link>
   );
 };
 
