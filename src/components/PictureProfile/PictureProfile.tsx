@@ -54,17 +54,26 @@ const PictureProfile = () => {
                 <a
                   href="https://www.linkedin.com/in/kelechi-link/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <SocialIcons type="linkedin" />
                 </a>
               </StyledIcon>
               <StyledIcon tipText="twitter">
-                <a href="https://twitter.com/kelechsky" target="_blank">
+                <a
+                  href="https://twitter.com/kelechsky"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <SocialIcons type="twitter" />
                 </a>
               </StyledIcon>
               <StyledIcon tipText="github">
-                <a href="https://github.com/klexzi" target="_blank">
+                <a
+                  href="https://github.com/klexzi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <SocialIcons type="github" />
                 </a>
               </StyledIcon>

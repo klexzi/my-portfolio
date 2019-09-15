@@ -34,7 +34,7 @@ const Home = () => {
        'Leading engineers and developers.'
       ],
       typeSpeed: 50,
-      backSpeed: 50,
+      backSpeed: 20,
       loop: true,
     };
     let typed = new Typed((el as any).current, options)

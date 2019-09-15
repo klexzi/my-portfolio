@@ -46,19 +46,31 @@ const About = () => {
           </AboutContent>
         </Grid>
         <Grid item xs={6}>
-          <AboutContent icon={OptimizationIcon} title="Optimization">
+          <AboutContent
+            icon={OptimizationIcon}
+            title="Optimization"
+            animationDelay={500}
+          >
             Audit your web application, perform technical improvements and write
             meta tags.
           </AboutContent>
         </Grid>
         <Grid item xs={6}>
-          <AboutContent icon={DatabaseIcon} title="Database">
+          <AboutContent
+            icon={DatabaseIcon}
+            title="Database"
+            animationDelay={1000}
+          >
             SSL certificate installation and configuration, redirection
             configuration on your website.
           </AboutContent>
         </Grid>
         <Grid item xs={6}>
-          <AboutContent icon={DataSecurityIcon} title="Data Security">
+          <AboutContent
+            icon={DataSecurityIcon}
+            title="Data Security"
+            animationDelay={1500}
+          >
             Strategy with leading data protection technology to safeguard your
             critical data.
           </AboutContent>

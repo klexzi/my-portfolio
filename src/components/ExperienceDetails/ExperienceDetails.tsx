@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { grey } from '@material-ui/core/colors';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 interface ExperienceDetailsTypes {
   duration: string;
@@ -24,8 +25,14 @@ const ExperienceDetails = ({
 }: ExperienceDetailsTypes) => {
   const classes = useStyles();
   return (
-    <Box display="flex" flexDirection="column" marginBottom={4} marginTop={1}>
-      <Box>
+    <Box
+      display="flex"
+      flexDirection="column"
+      marginBottom={4}
+      marginTop={1}
+      className="animated infinite pulse slower"
+    >
+      <Box component="div">
         <Typography variant="overline" color="primary" gutterBottom>
           {duration}
         </Typography>

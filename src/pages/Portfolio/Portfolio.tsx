@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Grid, Box } from '@material-ui/core';
+import { Typography, Box } from '@material-ui/core';
 import Page from '../Page/Page';
 import PortfolioImagePreview from '../../components/PortfolioImageItem/PortfolioImagePreview';
 import useStyles from './Portfolio.styles';

@@ -1,6 +1,6 @@
-import React, { ReactNode } from 'react';
-import { Box, Icon, Tooltip, Fade } from '@material-ui/core';
-import { withStyles, Theme } from '@material-ui/core/styles';
+import React from 'react';
+import { Box, Tooltip, Fade } from '@material-ui/core';
+import { Theme } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/styles';
 
 const buttonClickSound = require('../../assets/button-click.wav');

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Theme, Box } from '@material-ui/core';
+import { Grid, Theme } from '@material-ui/core';
 import { Route } from 'react-router-dom';
 
 import Sidebar from '../Sidebar/Sidebar';

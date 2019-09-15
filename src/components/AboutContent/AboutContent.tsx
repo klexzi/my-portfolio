@@ -1,11 +1,12 @@
 import React from 'react';
-import { Grid, Typography, Theme, Box } from '@material-ui/core';
+import { Typography, Theme, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
 export type AboutContentProps = {
   icon: string,
   title: string,
   children: string,
+  animationDelay?: number,
 };
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -17,11 +18,26 @@ const useStyles = makeStyles((theme: Theme) => ({
     padding: '18px 0 18px 0',
   },
 }));
-const AboutContent = ({ title, icon, children }: AboutContentProps) => {
+const AboutContent = ({
+  title,
+  icon,
+  children,
+  animationDelay,
+}: AboutContentProps) => {
   const classes = useStyles();
+
   return (
-    <Box className={classes.content}>
-      <img src={icon} width="80" height="80" />
+    <Box
+      className={classes.content}
+      component="div"
+      data-aos="fade-right"
+      data-aos-delay={animationDelay}
+      data-aos-offset="100"
+      data-aos-duration="500"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+    >
+      <img src={icon} width="80" height="80" alt="about content" />
       <Typography
         variant="h5"
         component="h4"
