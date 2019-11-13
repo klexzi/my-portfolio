@@ -5,7 +5,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import { withRouter, RouteComponentProps } from 'react-router-dom'
 
 export type MenuIconsProp = {
-  type: 'home' | 'about' | 'contact' | 'works' | 'resume' | 'download',
+  type: 'home' | 'about' | 'contact' | 'projects' | 'resume' | 'download',
   active?: boolean,
 };
 
@@ -24,11 +24,10 @@ const useStyles = makeStyles((theme: Theme) => ({
 const MenuIcons = (props: MenuIconsProp) => {
   const classes = useStyles(props);
   const { type } = props;
-  console.log('props.active', props.active)
   const iconType =
     type === 'contact'
       ? 'local_phone'
-      : type === 'works'
+      : type === 'projects'
       ? 'business_center'
       : type === 'about'
       ? 'person_outline'
@@ -58,7 +57,6 @@ const MenuIcons = (props: MenuIconsProp) => {
 function withActiveProp<T extends RouteComponentProps & MenuIconsProp>(Component: React.ComponentType<T>) {
   return (props: T) => {
     const isActive = props.location.pathname.replace('/', '') === props.type || (props.location.pathname === "/" && props.type === 'home')
-    console.log('props.location.pathname', props.location.pathname)
     return <Component active={isActive} {...props} />
   }
 }

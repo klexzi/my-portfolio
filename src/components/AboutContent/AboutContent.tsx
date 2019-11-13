@@ -27,16 +27,7 @@ const AboutContent = ({
   const classes = useStyles();
 
   return (
-    <Box
-      className={classes.content}
-      component="div"
-      data-aos="fade-right"
-      data-aos-delay={animationDelay}
-      data-aos-offset="100"
-      data-aos-duration="500"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-    >
+    <Box className={classes.content} component="div">
       <img src={icon} width="80" height="80" alt="about content" />
       <Typography
         variant="h5"

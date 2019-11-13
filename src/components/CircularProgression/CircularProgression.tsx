@@ -21,7 +21,7 @@ const CircularProgression = ({
   return (
     <Box
       width="100px"
-      height="100px"
+      height="100%"
       alignItems="center"
       display="flex"
       flexDirection="column"

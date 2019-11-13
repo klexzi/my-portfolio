@@ -6,6 +6,7 @@ import useStyles from './Portfolio.styles';
 
 const portfolios = [
   {
+    identifier: 'sellvy',
     title: 'Lorem ipsum',
     images: [
       'https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
@@ -13,6 +14,7 @@ const portfolios = [
     ],
   },
   {
+    identifier: 'enyata',
     title: 'Jumpman Up to Something',
     images: [
       'https://images.unsplash.com/photo-1556155092-8707de31f9c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
@@ -21,6 +23,7 @@ const portfolios = [
     ],
   },
   {
+    identifier: 'peckish',
     title: 'Water Corporation',
     images: [
       'https://images.unsplash.com/photo-1566836986583-94da6d4c6c67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
@@ -29,6 +32,7 @@ const portfolios = [
     ],
   },
   {
+    identifier: 'shuttlers',
     title: 'Future Hyndryx',
     images: [
       'https://images.unsplash.com/photo-1476357471311-43c0db9fb2b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
@@ -44,7 +48,7 @@ const Portfolio = () => {
       </Typography>
       <Box className={classes.masonry} paddingY={5}>
         {portfolios.map(portfolio => (
-          <PortfolioImagePreview {...portfolio} />
+          <PortfolioImagePreview key={portfolio.identifier} {...portfolio} />
         ))}
       </Box>
     </Page>

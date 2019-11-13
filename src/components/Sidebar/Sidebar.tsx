@@ -15,8 +15,8 @@ const Sidebar = () => {
         <StyledIcon tipText="About Me">
           <MenuIcons type="about" />
         </StyledIcon>
-        <StyledIcon tipText="Works">
-          <MenuIcons type="works" />
+        <StyledIcon tipText="Projects">
+          <MenuIcons type="projects" />
         </StyledIcon>
         <StyledIcon tipText="Resume">
           <MenuIcons type="resume" />

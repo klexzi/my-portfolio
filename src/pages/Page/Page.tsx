@@ -7,6 +7,10 @@ const useStyles = makeStyles(theme => ({
     height: '100%',
     overflowY: 'scroll',
     boxSizing: 'border-box',
+    padding: '32px',
+    [theme.breakpoints.down('sm')]: {
+      padding: '30px 5px',
+    },
   },
 }));
 const Page: React.FC = ({ children }) => {

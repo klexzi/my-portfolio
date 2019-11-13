@@ -25,4 +25,4 @@ stories.add('About', () => <About />);
 stories.add('Resume', () => <Resume />);
 stories.add('Contact', () => <Contact />);
 stories.add('Portfolio', () => <Portfolio />);
-stories.add('Project', () => <Project />);
+// stories.add('Project', () => <Project />);

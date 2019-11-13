@@ -1,6 +1,13 @@
 import React from 'react';
 import Page from '../Page/Page';
-import { Typography, Divider, Box, Icon, makeStyles } from '@material-ui/core';
+import {
+  Typography,
+  Divider,
+  Box,
+  Icon,
+  makeStyles,
+  Grid,
+} from '@material-ui/core';
 import { usePageStyles } from '../../helpers/hooks';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import ContactForm from '../../components/ContactForm/ContactForm';
@@ -36,38 +43,38 @@ const Contact = () => {
       <Box marginTop={4} display="flex" justifyContent="center">
         <SectionTitle title="GET IN TOUCH" />
       </Box>
-      <Box
-        display="flex"
-        justifyContent="space-between"
-        paddingX={10}
-        paddingY={5}
-      >
-        <Box>
+      <Grid container justify="center">
+        <Grid item xs>
           <Typography color="primary" align="center">
             <Icon className={contactClasses.icon}>location_on</Icon>
           </Typography>
-          <Typography color="textPrimary">Lagos, Nigeria</Typography>
-        </Box>
-        <Box>
+          <Typography align="center" color="textPrimary">
+            Lagos, Nigeria
+          </Typography>
+        </Grid>
+        >
+        <Grid item xs>
           <Typography color="primary" align="center">
             <Icon className={contactClasses.icon}>email</Icon>
           </Typography>
-          <Typography color="textPrimary">
+          <Typography align="center" color="textPrimary">
             kelechinwosumail@gmail.com
           </Typography>
-        </Box>
-        <Box>
+        </Grid>
+        <Grid item xs>
           <Typography color="primary" align="center">
             <Icon className={contactClasses.icon}>perm_phone_msg</Icon>
           </Typography>
-          <Typography color="textPrimary">+2348164239220</Typography>
-        </Box>
-      </Box>
+          <Typography align="center" color="textPrimary">
+            +2348164239220
+          </Typography>
+        </Grid>
+      </Grid>
       <Divider />
       <Box marginTop={4} display="flex" justifyContent="center">
         <SectionTitle title="SEND MESSAGE" />
       </Box>
-      
+
       <ContactForm />
     </Page>
   );

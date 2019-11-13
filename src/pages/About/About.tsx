@@ -39,13 +39,13 @@ const About = () => {
         My Services
       </Typography>
       <Grid container className={classes.section} spacing={2}>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <AboutContent icon={DeveloperIcon} title="Development">
             Building a custom tailored solution based on your technical
             specification.
           </AboutContent>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <AboutContent
             icon={OptimizationIcon}
             title="Optimization"
@@ -55,7 +55,7 @@ const About = () => {
             meta tags.
           </AboutContent>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <AboutContent
             icon={DatabaseIcon}
             title="Database"
@@ -65,7 +65,7 @@ const About = () => {
             configuration on your website.
           </AboutContent>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <AboutContent
             icon={DataSecurityIcon}
             title="Data Security"

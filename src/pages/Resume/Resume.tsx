@@ -39,19 +39,27 @@ const Resume = () => {
         alignItems="center"
       >
         <SectionTitle title="Soft Skills" />
-        <Box display="flex" justifyContent="space-between" width="100%">
-          <CircularProgression title="Communication" percentage={85} />
-          <CircularProgression title="Collaboration" percentage={80} />
-          <CircularProgression title="Speed" percentage={75} />
-          <CircularProgression title="Creativity" percentage={86} />
-        </Box>
+        <Grid container justify="center" alignItems="center" spacing={1}>
+          <Grid item xs>
+            <CircularProgression title="Communication" percentage={85} />
+          </Grid>
+          <Grid item xs>
+            <CircularProgression title="Collaboration" percentage={80} />
+          </Grid>
+          <Grid item xs>
+            <CircularProgression title="Speed" percentage={75} />
+          </Grid>
+          <Grid item xs>
+            <CircularProgression title="Creativity" percentage={86} />
+          </Grid>
+        </Grid>
       </Box>
       <Box
         paddingTop={5}
         display="flex"
         flexDirection="column"
         alignItems="center"
-        marginTop={10}
+        marginTop={5}
         marginBottom={5}
       >
         <SectionTitle title="Technical Skills" />

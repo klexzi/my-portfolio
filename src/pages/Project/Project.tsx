@@ -1,5 +1,4 @@
-import React, { useEffect, useState, ReactElement } from 'react';
-import Page from '../Page/Page';
+import React, { useEffect, useState } from 'react';
 import {
   Typography,
   Box,
@@ -9,16 +8,26 @@ import {
   ListItemText,
 } from '@material-ui/core';
 
-import projectData, { ProjectData } from './Project.data';
+import Page from '../Page/Page';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import Projects from '../../data/projects';
+import { RouteComponentProps } from 'react-router';
+
+interface RouteInfo {
+  key: string;
+}
 const useStyles = makeStyles(theme => ({
   date: {
     backgroundColor: theme.palette.primary.main,
     padding: '5px',
   },
+  image: {
+    width: '100%',
+  },
 }));
-const Project: React.FunctionComponent = props => {
-  const [values] = useState(projectData['sellvy']);
+const Project = (props: RouteComponentProps<RouteInfo>) => {
+  const projectData = new Projects();
+  const [values] = useState(projectData.selectProject(props.match.params.key));
   const [imageSrc, setImageSrc] = useState(values.images[0]);
   const classes = useStyles();
 
@@ -47,7 +56,7 @@ const Project: React.FunctionComponent = props => {
         </Typography>
       </Box>
       <Box paddingY={3}>
-        <img src={imageSrc} alt="project" />
+        <img className={classes.image} src={imageSrc} alt="project" />
       </Box>
 
       <Box marginBottom={4}>
