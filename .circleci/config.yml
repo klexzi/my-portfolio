@@ -26,14 +26,18 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: yarn install
+      - run: 
+          name: Install dependencies
+          command: yarn install
 
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: yarn build
+      - run: 
+          name: Run Build
+          command: yarn build
   
   deploy:
     docker:
@@ -41,8 +45,18 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run: yarn add gh-pages
-      - run: yarn deploy
+      - run: 
+          name: Add Gh-pages
+          command: yarn add gh-pages
+      - run:
+          name: Add Identity
+          command:
+            git config --global user.email "builds@circleci.com"
+            git config --global user.name "CircleCI"
+
+      - run: 
+          name: Deploy
+          command: yarn deploy
 
 workflows:
   version: 2
