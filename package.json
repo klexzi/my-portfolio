@@ -2,6 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://klexzi.github.io/portfolio",
   "dependencies": {
     "@material-ui/core": "^4.3.2",
     "@material-ui/icons": "^4.2.1",
@@ -12,6 +13,7 @@
     "aos": "^3.0.0-beta.6",
     "cxs": "^6.2.0",
     "d3-ease": "^1.0.5",
+    "gh-pages": "^2.1.1",
     "react": "^16.8.6",
     "react-animate-on-scroll": "^2.1.5",
     "react-circular-progressbar": "^2.0.2",
@@ -27,7 +29,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
