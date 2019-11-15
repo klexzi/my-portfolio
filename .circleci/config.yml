@@ -44,6 +44,9 @@ jobs:
       - image: circleci/node:12.13
     working_directory: ~/repo
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "SO:ME:FIN:G:ER:PR:IN:T"
       - checkout
       - run: 
           name: Add Gh-pages
