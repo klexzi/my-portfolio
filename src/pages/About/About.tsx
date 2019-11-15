@@ -26,13 +26,15 @@ const About = () => {
         color="textSecondary"
         className={classes.content}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        Kelechi Nwosu is a software Engineer from Nigeria with great enthusiasm
+        for technology. Mentored software engineers and also thousands of
+        members of the National Association of Computer Engineering Students
+        (NACOMES) in which he was the vice president. He has over 6 years of
+        programming experience and over 4 active years of experience has a
+        software engineer. During this period, he has developed lots of exciting
+        applications for various sectors of the industry. <br /> <br />
+        Mr. Kelechi’s other interest include playing video games, football, and
+        also loves music.
       </Typography>
       <Divider variant="fullWidth" className={classes.divider} />
       <Typography variant="h4" component="h4" color="textPrimary">

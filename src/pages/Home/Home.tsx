@@ -6,9 +6,6 @@ import Dp from '../../assets/dp-large.jpg';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    background: `url(${Dp})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'right',
     backgroundRepeat: 'no-repeat',
     width: '100%',
     height: '100%',

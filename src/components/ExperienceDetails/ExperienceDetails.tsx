@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/styles';
 import { grey } from '@material-ui/core/colors';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-interface ExperienceDetailsTypes {
+export interface ExperienceDetailsTypes {
   duration: string;
   titleRole: string;
   location: string;
@@ -12,8 +12,9 @@ interface ExperienceDetailsTypes {
 }
 const useStyles = makeStyles({
   location: {
-    color: grey[600],
+    color: grey[400],
     textTransform: 'capitalize',
+    fontWeight: 700,
   },
 });
 
@@ -30,7 +31,7 @@ const ExperienceDetails = ({
       flexDirection="column"
       marginBottom={4}
       marginTop={1}
-      className="animated infinite pulse slower"
+      // className="animated infinite pulse slower"
     >
       <Box component="div">
         <Typography variant="overline" color="primary" gutterBottom>
@@ -41,7 +42,7 @@ const ExperienceDetails = ({
         </Typography>
         <Typography
           className={classes.location}
-          variant="caption"
+          variant="subtitle1"
           color="textSecondary"
           paragraph
         >

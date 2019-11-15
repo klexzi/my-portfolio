@@ -7,9 +7,13 @@ import CircularProgression from '../../components/CircularProgression/CircularPr
 import LinearSkillProgress from '../../components/LinearSkillProgress/LinearSkillProgress';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import ExperienceDetails from '../../components/ExperienceDetails/ExperienceDetails';
+import Education from '../../data/education';
+import Experience from '../../data/experience';
 
 const Resume = () => {
   const classes = usePageStyles();
+  const educationList = new Education().educationList();
+  const experienceList = new Experience().experienceList();
   return (
     <Page>
       <Typography
@@ -104,24 +108,9 @@ const Resume = () => {
                 Education
               </Typography>
             </Box>
-            <ExperienceDetails
-              duration="2012 -2014"
-              titleRole="Desiginer"
-              location="Yaba college of technology"
-              details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-            />
-            <ExperienceDetails
-              duration="2012 -2014"
-              titleRole="Desiginer"
-              location="Yaba college of technology"
-              details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-            />
-            <ExperienceDetails
-              duration="2012 -2014"
-              titleRole="Desiginer"
-              location="Yaba college of technology"
-              details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-            />
+            {educationList.map(education => (
+              <ExperienceDetails {...education} />
+            ))}
           </Grid>
           <Grid item xs={12} sm={6}>
             <Box>
@@ -129,24 +118,9 @@ const Resume = () => {
                 Work History
               </Typography>
             </Box>
-            <ExperienceDetails
-              duration="2012 -2014"
-              titleRole="Desiginer"
-              location="Yaba college of technology"
-              details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-            />
-            <ExperienceDetails
-              duration="2012 -2014"
-              titleRole="Desiginer"
-              location="Yaba college of technology"
-              details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-            />
-            <ExperienceDetails
-              duration="2012 -2014"
-              titleRole="Desiginer"
-              location="Yaba college of technology"
-              details="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-            />
+            {experienceList.map(experience => (
+              <ExperienceDetails {...experience} />
+            ))}
           </Grid>
         </Grid>
       </Box>
