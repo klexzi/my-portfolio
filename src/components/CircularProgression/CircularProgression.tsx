@@ -14,9 +14,9 @@ const CircularProgression = ({
   title,
   percentage,
 }: CircularProgressionType) => {
-  const [isAnimated, setIsAnimated] = useState(false);
+  const [, setIsAnimated] = useState(false);
   useEffect(() => {
-    setIsAnimated(!isAnimated);
+    setIsAnimated(isAnimated => !isAnimated);
   }, []);
   return (
     <Box

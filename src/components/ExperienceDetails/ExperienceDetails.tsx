@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { grey } from '@material-ui/core/colors';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 export interface ExperienceDetailsTypes {
   duration: string;

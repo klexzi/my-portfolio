@@ -2,8 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { Box, makeStyles, Theme, Typography } from '@material-ui/core';
 import Typed from 'typed.js';
 
-import Dp from '../../assets/dp-large.jpg';
-
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     backgroundRepeat: 'no-repeat',
