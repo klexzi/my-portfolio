@@ -50,7 +50,7 @@ jobs:
           command: yarn add gh-pages
       - run:
           name: Add Identity
-          command:
+          command: |
             git config --global user.email "builds@circleci.com"
             git config --global user.name "CircleCI"
 
