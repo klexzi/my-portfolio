@@ -42,8 +42,7 @@ jobs:
     steps:
       - checkout
       - run: yarn add gh-pages
-      - run: yarn build
-      - run: gh-pages -d build
+      - run: yarn deploy
 
 workflows:
   version: 2
