@@ -33,12 +33,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run tests!
-  test: 
-    docker:
-      - image: circleci/node:12.13
-    steps:
-      - checkout
       - run: yarn test
   
   deploy:
@@ -53,12 +47,10 @@ workflows:
   build_test_and_deploy:
     jobs:
       - build
-      - test:
-          requires:
-            - build
+
       - deploy:
           requires:
-            - test
+            - build
           filters:
             branches:
               only: 
