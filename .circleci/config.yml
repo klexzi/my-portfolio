@@ -41,7 +41,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run: yarn install gh-pages
+      - run: yarn add gh-pages
       - run: yarn build
       - run: gh-pages -d build
 
