@@ -61,5 +61,6 @@ workflows:
             - test
         filter:
           branches:
-            only: master
+            only: 
+              - master
   
