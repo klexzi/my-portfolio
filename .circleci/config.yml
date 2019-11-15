@@ -46,7 +46,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "SO:ME:FIN:G:ER:PR:IN:T"
+            - "60:f3:e4:0e:b6:1d:ba:15:1f:50:ef:e5:5d:c5:4f:ad"
       - checkout
       - run: 
           name: Add Gh-pages
