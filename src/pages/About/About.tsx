@@ -26,15 +26,15 @@ const About = () => {
         color="textSecondary"
         className={classes.content}
       >
-        Kelechi Nwosu is a software Engineer from Nigeria with great enthusiasm
-        for technology. Mentored software engineers and also thousands of
-        members of the National Association of Computer Engineering Students
-        (NACOMES) in which he was the vice president. He has over 6 years of
-        programming experience and over 4 active years of experience has a
-        software engineer. During this period, he has developed lots of exciting
+        I am a Software Engineer from Nigeria with great enthusiasm for
+        technology. Mentored software engineers and also thousands of members of
+        the National Association of Computer Engineering Students (NACOMES) in
+        which I was the vice president. I have over 6 years of programming
+        experience and over 4 active years of experience has a software
+        engineer. During this period, I have developed lots of exciting
         applications for various sectors of the industry. <br /> <br />
-        Mr. Kelechi’s other interest include playing video games, football, and
-        also loves music.
+        My other interests include playing video games, football, and also loves
+        music.
       </Typography>
       <Divider variant="fullWidth" className={classes.divider} />
       <Typography variant="h4" component="h4" color="textPrimary">
@@ -63,8 +63,8 @@ const About = () => {
             title="Database"
             animationDelay={1000}
           >
-            SSL certificate installation and configuration, redirection
-            configuration on your website.
+            Design and development of database systems, enhancing scalability
+            and performance of existing database architecture.
           </AboutContent>
         </Grid>
         <Grid item xs={12} md={6}>

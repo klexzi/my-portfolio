@@ -9,8 +9,9 @@ const data = {
   sellvy: {
     title: 'Sellvy',
     date: 'June, 2019',
-    description:
-      'it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using "Content here, content here", making it look like readable English',
+    description: `
+      Sellvy is a social E-commerce application that provides means for users to earn money by sharing(right from the platform) products and services to their friends and family on their favorite social platforms right and also for merchants to place their products or services and be rest assured that they will cover a high market range.
+      `,
     images: [
       'https://images.unsplash.com/photo-1566852766232-66a16bdc0328?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
       'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',

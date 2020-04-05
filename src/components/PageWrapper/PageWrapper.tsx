@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   container: {
     backgroundColor: grey[900],
     height: '700px',
+    maxHeight: '100vh',
     [theme.breakpoints.down('sm')]: {
       width: '100%',
       height: '100vh',
