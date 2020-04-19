@@ -7,6 +7,7 @@ import {
   Icon,
   makeStyles,
   Grid,
+  Link,
 } from '@material-ui/core';
 import { usePageStyles } from '../../helpers/hooks';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
@@ -58,7 +59,9 @@ const Contact = () => {
             <Icon className={contactClasses.icon}>email</Icon>
           </Typography>
           <Typography align="center" color="textPrimary">
-            kelechinwosumail@gmail.com
+            <Link color="inherit" href="mailto:kelechinwosumail@gmail.com">
+              kelechinwosumail@gmail.com
+            </Link>
           </Typography>
         </Grid>
         <Grid item xs>
@@ -66,7 +69,7 @@ const Contact = () => {
             <Icon className={contactClasses.icon}>perm_phone_msg</Icon>
           </Typography>
           <Typography align="center" color="textPrimary">
-            +2348164239220
+            <Link href="tel:+2348164239220" color="inherit">+2348164239220</Link>
           </Typography>
         </Grid>
       </Grid>

@@ -9,7 +9,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     height: '100%',
   },
   overlay: {
-    backgroundColor: 'rgba(0, 0 ,0, 0.7)',
     width: 'inherit',
     height: 'inherit',
   },

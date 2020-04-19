@@ -108,8 +108,8 @@ const Resume = () => {
                 Education
               </Typography>
             </Box>
-            {educationList.map(education => (
-              <ExperienceDetails {...education} />
+            {educationList.map((education, i) => (
+              <ExperienceDetails key={i} {...education} />
             ))}
           </Grid>
           <Grid item xs={12} sm={6}>

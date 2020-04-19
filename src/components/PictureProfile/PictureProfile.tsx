@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => {
   return {
     root: {
       width: 'inherit',
-      height: '107%',
+      height: '104%',
       backgroundImage: `url(${dp})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
@@ -40,14 +40,14 @@ const PictureProfile = () => {
           <Box p={5} display="flex" flexDirection="column" alignItems="center">
             <Typography
               className={classes.name}
-              variant="h2"
-              component="h3"
+              variant="h4"
+              component="h4"
               color="textPrimary"
             >
               Kelechi Nwosu
             </Typography>
             <Typography variant="h6" component="h6" color="primary">
-              Developer
+              Software Engineer
             </Typography>
             <Box m={1} display="flex">
               <StyledIcon tipText="linkedIn">
